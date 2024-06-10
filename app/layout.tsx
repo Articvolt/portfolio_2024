@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {cn} from "@/lib/utils";
 import { Anek_Telugu } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import React from "react";
 
@@ -22,7 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-      <body className={cn(GeistSans.variable, TELUGU, "font-sans h-full bg-background text-foreground")}>
+      <body className={cn(
+          GeistSans.variable,
+          GeistMono.variable,
+          TELUGU.variable,
+          "font-sans h-full bg-background text-foreground"
+      )}>
         {children}
       </body>
     </html>
