@@ -17,7 +17,7 @@ const Code = ({className, ...props}: ComponentPropsWithoutRef<"span">) => {
 export const Hero = () => {
     return (
         <Section className="flex max-md:flex-col items-start gap-4">
-            <div className="flex-[2] flex flex-col gap-2">
+            <div className="flex-[3] w-full flex flex-col gap-2">
                 <h2 className="font-caption text-5xl text-primary">Ugo DA SILVA</h2>
                 <h3 className="text-3xl font-caption">
                     Développeur Magento
@@ -26,7 +26,7 @@ export const Hero = () => {
                     lorem ipsum <Code>test code</Code>
                 </p>
             </div>
-            <div className="flex-1 max-md:m-auto ml-auto">
+            <div className="flex-[2] max-md:m-auto ml-auto">
                 <img
                     src="/ugo_profile.jpg"
                     className="w-full h-auto max-w-xs max-md:w-56"
